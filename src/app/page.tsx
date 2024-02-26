@@ -1,32 +1,20 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { About } from "@/components/About/About";
+import { Footer } from "@/components/Footer/Footer";
+import { Header } from "@/components/Header/Header";
+import { Top } from "@/components/Top/Top";
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <About/>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+        <Header />
       </div>
+      <Top />
 
       <div className={styles.center}>
+        
         <Image
           className={styles.logo}
           src="/next.svg"
@@ -36,7 +24,7 @@ export default function Home() {
           priority
         />
       </div>
-
+      <About/>
       <div className={styles.grid}>
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -88,6 +76,9 @@ export default function Home() {
           </p>
         </a>
       </div>
+      
+      <Footer/>
     </main>
+    
   );
 }
