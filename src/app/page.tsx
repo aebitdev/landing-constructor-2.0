@@ -8,6 +8,7 @@ import { Top } from "@/components/Top/Top";
 export default function Home() {
   return (
     <main className={styles.main}>
+      
       <div className={styles.description}>
         <Header />
       </div>
@@ -15,10 +16,10 @@ export default function Home() {
 
       <div className={styles.center}>
         
-        <Image
+      <Image
           className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
+          src="/img/logo.svg"
+          alt="Logo"
           width={180}
           height={37}
           priority

@@ -1,7 +1,18 @@
+import Image from "next/image";
+import style from "/Header.module.scss"
+
 export const Header = () => {
   return (
     <header>
-      <div className="logo"></div>
+      <div className="logo">
+      <Image
+          src="/img/logo.svg"
+          alt="Logo"
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
       <div className="header__menu">
         <nav>
           <ul>
