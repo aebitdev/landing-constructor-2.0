@@ -1,9 +1,17 @@
 {
-  "extends": ["airbnb", "prettier", "eslint:recommended"],
+  "extends": ["plugin:import/errors", "prettier", "next"],
   "plugins": ["prettier"],
   "rules": {
     "semi": ["error", "always"],
     "quotes": ["error", "double"],
-    "prettier/prettier": ["error"]
+    "prettier/prettier": ["error"],
+    "import/resolver": {
+      "alias": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "map": [
+          ["@", "."]
+        ]
+      }
+    }
   }
 }

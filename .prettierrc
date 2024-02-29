@@ -1,9 +1,9 @@
 {
   "useTabs": false,
-  "tabSize": 2,
-  "semi": true,
-  "singleQuote": true,
   "trailingComma": "es5",
+  "tabWidth": 4,
+  "semi": false,
+  "singleQuote": true,
   "bracketSpacing": true,
   "parser":"typescript"
 }

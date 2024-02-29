@@ -1,11 +1,12 @@
-import Image from "next/image";
-import style from "/Header.module.scss"
+import React from 'react';
+import Image from 'next/image';
+// import style from 'Header.module.scss';
 
-export const Header = () => {
+export default function Header() {
   return (
     <header>
       <div className="logo">
-      <Image
+        <Image
           src="/img/logo.svg"
           alt="Logo"
           width={180}
@@ -16,11 +17,15 @@ export const Header = () => {
       <div className="header__menu">
         <nav>
           <ul>
-            <li><a href="#about">О нас</a></li>
-            <li><a href="#faq">FAQ</a></li>
+            <li>
+              <a href="#about">О нас</a>
+            </li>
+            <li>
+              <a href="#faq">FAQ</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-  )
+  );
 }
