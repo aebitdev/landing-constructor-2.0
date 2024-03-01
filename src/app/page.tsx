@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Image from 'next/image'
 import styles from './page.module.css'
@@ -10,9 +9,7 @@ import Top from '@/components/Top/Top'
 const Home: React.FC = () => {
     return (
         <main className={styles.main}>
-            <div className={styles.description}>
-                <Header />
-            </div>
+            <Header />
             <Top />
 
             <div className={styles.center}>
@@ -25,7 +22,9 @@ const Home: React.FC = () => {
                     priority
                 />
             </div>
+
             <About />
+            
             <div className={styles.grid}>
                 <a
                     href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -90,4 +89,4 @@ const Home: React.FC = () => {
     )
 }
 
-export default Home;
+export default Home
